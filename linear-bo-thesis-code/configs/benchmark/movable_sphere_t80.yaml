@@ -1,0 +1,7 @@
+name: movable_sphere_t80
+n_tot: 150
+n_init: 30
+fn:
+  _target_: src.benchmarks.movable_sphere.MovableSphere
+  dim: 100
+  center_t: 0.8

@@ -1,0 +1,14 @@
+name: bencher_bbob_sphere_6_100
+n_tot: 500
+n_init: 30
+fn:
+  _target_: src.benchmarks.embedded.EmbeddedTestFunction
+  d_ambient: 100
+  negate: true
+  inner_fn:
+    _target_: src.benchmarks.bencher_wrapper.BencherTestFunction
+    benchmark_name: bbob-sphere
+    dim: 6
+    address: "127.0.0.1"
+    port: 50051
+    negate: false

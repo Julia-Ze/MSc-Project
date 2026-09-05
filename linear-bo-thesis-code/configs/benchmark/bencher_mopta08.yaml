@@ -1,0 +1,10 @@
+name: bencher_mopta08
+n_tot: 500
+n_init: 30
+fn:
+  _target_: src.benchmarks.bencher_wrapper.BencherTestFunction
+  benchmark_name: mopta08
+  dim: 124
+  address: "127.0.0.1"
+  port: 50051
+  negate: true
